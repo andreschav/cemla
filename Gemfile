@@ -21,6 +21,15 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'foundation-rails'
+gem 'devise'
+gem "paperclip", "~> 3.0"
+gem "hirb"
+gem 'seedbank'
+gem 'jquery-ui-rails'
+gem 'meta_search'
+gem 'kaminari'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

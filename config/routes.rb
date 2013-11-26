@@ -1,4 +1,19 @@
 Cemla::Application.routes.draw do
+  devise_for :usuarios
+
+  resources :personas  do
+    collection do
+      get 'alumnos'
+    end
+  end
+
+
+  resources :profesiones
+
+
+  resources :tipos
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +63,7 @@ Cemla::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'personas#index'
 
   # See how all your routes lay out with "rake routes"
 
