@@ -1,0 +1,45 @@
+<%= form_for(@fuente_laboral) do |f| %>
+  <% if @fuente_laboral.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fuente_laboral.errors.count, "error") %> prohibited this fuente_laboral from being saved:</h2>
+
+      <ul>
+      <% @fuente_laboral.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :correoe %><br />
+    <%= f.text_field :correoe %>
+  </div>
+  <div class="field">
+    <%= f.label :fono %><br />
+    <%= f.number_field :fono %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br />
+    <%= f.number_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :web %><br />
+    <%= f.text_field :web %>
+  </div>
+  <div class="field">
+    <%= f.label :ciudad_id %><br />
+    <%= f.number_field :ciudad_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

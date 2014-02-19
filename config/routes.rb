@@ -1,4 +1,16 @@
 Cemla::Application.routes.draw do
+  resources :fuentes_laborales
+
+
+  resources :cargos
+
+
+  resources :ciudades
+
+
+  resources :universidades
+
+
   devise_for :usuarios
 
   resources :personas  do

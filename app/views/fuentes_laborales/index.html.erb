@@ -1,0 +1,35 @@
+<h1>Listing fuentes_laborales</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Direccion</th>
+    <th>Correoe</th>
+    <th>Fono</th>
+    <th>Fax</th>
+    <th>Web</th>
+    <th>Ciudad</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fuentes_laborales.each do |fuente_laboral| %>
+  <tr>
+    <td><%= fuente_laboral.nombre %></td>
+    <td><%= fuente_laboral.direccion %></td>
+    <td><%= fuente_laboral.correoe %></td>
+    <td><%= fuente_laboral.fono %></td>
+    <td><%= fuente_laboral.fax %></td>
+    <td><%= fuente_laboral.web %></td>
+    <td><%= fuente_laboral.ciudad_id %></td>
+    <td><%= link_to 'Show', fuente_laboral %></td>
+    <td><%= link_to 'Edit', edit_fuente_laboral_path(fuente_laboral) %></td>
+    <td><%= link_to 'Destroy', fuente_laboral, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fuente laboral', new_fuente_laboral_path %>

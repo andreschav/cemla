@@ -1,0 +1,2 @@
+module FuentesLaboralesHelper
+end

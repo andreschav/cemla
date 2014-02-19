@@ -11,7 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131125223717) do
+ActiveRecord::Schema.define(:version => 20131216194516) do
+
+  create_table "cargos", :force => true do |t|
+    t.string   "nombre"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "ciudades", :force => true do |t|
+    t.string   "nombre"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "fuentes_laborales", :force => true do |t|
+    t.string   "nombre"
+    t.string   "direccion"
+    t.string   "correoe"
+    t.integer  "fono"
+    t.integer  "fax"
+    t.string   "web"
+    t.integer  "ciudad_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "personas", :force => true do |t|
     t.integer  "ci"
@@ -29,8 +53,11 @@ ActiveRecord::Schema.define(:version => 20131125223717) do
     t.integer  "file_foto"
     t.integer  "file_ci"
     t.integer  "file_titulo"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.integer  "universidad_id"
+    t.integer  "fuente_laboral_id"
+    t.integer  "cargo_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
   create_table "profesiones", :force => true do |t|
@@ -41,6 +68,13 @@ ActiveRecord::Schema.define(:version => 20131125223717) do
 
   create_table "tipos", :force => true do |t|
     t.string   "nombre"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "universidades", :force => true do |t|
+    t.string   "nombre"
+    t.integer  "ciudad_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

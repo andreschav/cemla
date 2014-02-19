@@ -22,12 +22,12 @@
 #   cancel     Label for the button that cancels out of the action
 
 localization_defaults =
-  title: 'Esta seguro?'
-  body: 'Esta accion no tendra vuelta atras'
+  title: 'Are you sure?'
+  body: 'This action cannot be undone.'
   password: false
   prompt: 'Type <i>%s</i> to continue:'
-  ok: 'Confirmar'
-  cancel: 'Cancelar'
+  ok: 'Confirm'
+  cancel: 'Cancel'
 
 reveal_confirm = (element) ->
 
@@ -40,11 +40,11 @@ reveal_confirm = (element) ->
     return window.confirm confirm
 
   modal = $ """
-      <div class='reveal-modal small' data-reveal>
-        <h4 class='header'></h4>
+      <div class='reveal-modal medium'>
+        <h2 class='header'></h2>
         <p class='warning'></p>
         <div class='footer'>
-          <a class=' tiny small cancel-button secondary button radius inline'>
+          <a class='cancel-button secondary button radius inline'>
             #{confirm_localization['cancel']}
           </a>
         </div>
@@ -62,7 +62,7 @@ reveal_confirm = (element) ->
   confirm_button
     .removeAttr('class')
     .removeAttr('data-confirm')
-    .addClass('button tiny small radius alert inline confirm')
+    .addClass('button radius alert inline confirm')
     .html(confirm.ok || confirm_localization['ok'])
 
   if element.is('form') or element.is(':input')
@@ -71,7 +71,6 @@ reveal_confirm = (element) ->
         .closest('form')
         .removeAttr('data-confirm')
         .submit()
-        .foundation('reveal', 'close')
 
   modal
     .find('.cancel-button')

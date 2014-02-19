@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @fuente_laboral.nombre %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%= @fuente_laboral.direccion %>
+</p>
+
+<p>
+  <b>Correoe:</b>
+  <%= @fuente_laboral.correoe %>
+</p>
+
+<p>
+  <b>Fono:</b>
+  <%= @fuente_laboral.fono %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @fuente_laboral.fax %>
+</p>
+
+<p>
+  <b>Web:</b>
+  <%= @fuente_laboral.web %>
+</p>
+
+<p>
+  <b>Ciudad:</b>
+  <%= @fuente_laboral.ciudad_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_fuente_laboral_path(@fuente_laboral) %> |
+<%= link_to 'Back', fuentes_laborales_path %>

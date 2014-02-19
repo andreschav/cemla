@@ -16,6 +16,9 @@ class CreatePersonas < ActiveRecord::Migration
       t.integer :file_foto
       t.integer :file_ci
       t.integer :file_titulo
+      t.integer :universidad_id
+      t.integer :fuente_laboral_id
+      t.integer :cargo_id
 
       t.timestamps
     end

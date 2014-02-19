@@ -30,6 +30,8 @@ gem 'jquery-ui-rails'
 gem 'meta_search'
 gem 'kaminari'
 
+gem 'carrierwave'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

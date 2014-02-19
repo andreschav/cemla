@@ -51,5 +51,7 @@ production:
   encoding: unicode
   database: cemla_production
   pool: 5
-  username: cemla
-  password:
+  username: postgres
+  password: 1c0n37
+  host: localhost
+  port: 5432

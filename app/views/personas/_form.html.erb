@@ -1,4 +1,6 @@
 <%= form_for(@persona) do |f| %>
+  <fieldset>
+        <legend><R>Registro de Persona</R></legend>
   <% if @persona.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@persona.errors.count, "error") %> prohibited this persona from being saved:</h2>
@@ -10,68 +12,88 @@
       </ul>
     </div>
   <% end %>
+    <div class="row">
+      <div class="large-9 columns">
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :sexo %>
+        <%= f.text_field :sexo %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-3 columns">
+        <%= f.label :ci %>
+        <%= f.text_field :ci, :placeholder=>"Cedula de Identidad" %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :nombre %>
+        <%= f.text_field :nombre %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :apaterno %>
+        <%= f.text_field :apaterno %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :amaterno %>
+        <%= f.text_field :amaterno %>
+      </div>
 
-  <div class="field">
-    <%= f.label :ci %><br />
-    <%= f.number_field :ci %>
-  </div>
-  <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :apaterno %><br />
-    <%= f.text_field :apaterno %>
-  </div>
-  <div class="field">
-    <%= f.label :amaterno %><br />
-    <%= f.text_field :amaterno %>
-  </div>
-  <div class="field">
-    <%= f.label :sexo %><br />
-    <%= f.text_field :sexo %>
-  </div>
-  <div class="field">
-    <%= f.label :profesion_id %><br />
-    <%= f.number_field :profesion_id %>
-  </div>
-  <div class="field">
-    <%= f.label :fono_ofi %><br />
-    <%= f.text_field :fono_ofi %>
-  </div>
-  <div class="field">
-    <%= f.label :fono_casa %><br />
-    <%= f.text_field :fono_casa %>
-  </div>
-  <div class="field">
-    <%= f.label :fono_movil %><br />
-    <%= f.text_field :fono_movil %>
-  </div>
-  <div class="field">
-    <%= f.label :correoe %><br />
-    <%= f.text_field :correoe %>
-  </div>
-  <div class="field">
-    <%= f.label :tipo_id %><br />
-    <%= f.number_field :tipo_id %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_nac %><br />
-    <%= f.date_select :fecha_nac %>
-  </div>
-  <div class="field">
-    <%= f.label :file_foto %><br />
-    <%= f.number_field :file_foto %>
-  </div>
-  <div class="field">
-    <%= f.label :file_ci %><br />
-    <%= f.number_field :file_ci %>
-  </div>
-  <div class="field">
-    <%= f.label :file_titulo %><br />
-    <%= f.number_field :file_titulo %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+    </div>
+    <div class="row">
+      <div class="large-3 columns">
+        <%= f.label :fono_ofi %>
+        <%= f.text_field :fono_ofi %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :fono_casa %>
+        <%= f.text_field :fono_casa %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :fono_movil %>
+        <%= f.text_field :fono_movil %>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="large-3 columns">
+        <%= f.label :profesion_id %>
+        <%= f.number_field :profesion_id %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :correoe %>
+        <%= f.text_field :correoe %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :tipo_id %>
+        <%= f.number_field :tipo_id %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :fecha_nac %>
+        <%= f.text_field :fecha_nac %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns">
+        <%= f.label :file_foto %>
+        <%= f.number_field :file_foto %>
+      </div>
+      <div class="large-4 columns">
+        <%= f.label :file_ci %>
+        <%= f.number_field :file_ci %>
+      </div>
+      <div class="large-4 columns">
+        <%= f.label :file_titulo %>
+        <%= f.number_field :file_titulo %>
+      </div>
+    </div>
+
+
+
+
+      <div class="actions">
+        <%= f.submit 'Guardar', :data => { :confirm => 1},:class=> 'small button' %>
+      </div>
+  </fieldset>
 <% end %>
