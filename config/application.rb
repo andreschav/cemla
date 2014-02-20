@@ -17,7 +17,6 @@ end
 
 module Cemla
   class Application < Rails::Application
-    config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "login")
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -62,7 +61,6 @@ module Cemla
     config.assets.initialize_on_precompile = false
     # Enable the asset pipeline
     config.assets.enabled = true
-    config.assets.precompile += %w( normalize_login.css style_login.css )
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
