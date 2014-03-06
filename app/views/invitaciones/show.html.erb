@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Logo:</b>
+  <%= image_tag @invitacion.logo.url(:thumb) %>
+</p>
+<p>
+  <b>Nombre:</b>
+  <%= @invitacion.nombre %>
+</p>
+<p>
+  <b>Asunto:</b>
+  <%= @invitacion.asunto %>
+</p>
+
+<p>
+  <b>Cabeza:</b>
+  <%= raw(@invitacion.cabeza) %>
+</p>
+<p>
+  <b>Cuerpo:</b>
+  <%= raw(@invitacion.cuerpo) %>
+</p>
+<p>
+  <b>Pie:</b>
+  <%= raw(@invitacion.pie) %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @invitacion.fecha %>
+</p>
+
+
+<%= link_to 'Edit', edit_invitacion_path(@invitacion) %> |
+<%= link_to 'Back', invitaciones_path %>

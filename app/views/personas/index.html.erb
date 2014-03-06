@@ -1,4 +1,16 @@
-<h1>Listing personas</h1>
+<h1>Personas</h1>
+<%=  form_for @search, :html =>{ :class=>"form-search2 form-inline" } do |f| %>
+    <legend>Buscar Personas</legend>
+    <div class="input-append">
+
+      <%= f.text_field :nombre_contains, :placeholder => "Nombre" %>
+      <%= f.text_field :apaterno_contains, :placeholder => "Apellido Paterno" %>
+      <%= f.text_field :amaterno_contains, :placeholder => "Apellido Materno" %>
+      <%= f.collection_select :profesion_id_equals, Profesion.all, :id, :nombre,{:include_blank=>"Seleccione profesion"} %>
+      <%= f.collection_select :tipo_id_equals, Tipo.all, :id, :nombre,{:include_blank=>"Seleccione Tipo"} %>
+      <button class="btn btn-success">Buscar</button>
+    </div>
+<% end %>
 
 <table class="responsive" >
   <thead>
@@ -12,26 +24,35 @@
         <th></th>
         <th></th>
         <th></th>
+        <th></th>
       </tr>
   </thead>
     <tbody>
     <% @personas.each do |persona| %>
       <tr>
-        <td><%= persona.ci %></td>
+        <td><%= link_to persona.ci ,persona %></td>
         <td><%= persona.nombre %></td>
         <td><%= persona.apaterno %></td>
         <td><%= persona.amaterno %></td>
+        <td><%= persona.profesion.nombre %></td>
+        <td><%= persona.tipo.nombre %></td>
 
-        <td><%= persona.profesion_id %></td>
 
-        <td><%= persona.tipo_id %></td>
-
-        <td><%= link_to 'Show', persona %></td>
-        <td><%= link_to 'Edit', edit_persona_path(persona) %></td>
-        <td><%= link_to 'Destroy', persona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Editar', edit_persona_path(persona) %></td>
+        <% if persona.usuario.nil? %>
+            <td><%= link_to 'Crear Usuario', crear_usuario_persona_path(persona) %></td>
+        <% else %>
+            <td><%= link_to 'Editar Usuario', crear_usuario_persona_path(persona) %></td>
+        <% end %>
+        <td><%= link_to 'Eliminar', persona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
     </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="9"><%= paginate @personas  %></td>
+    </tr>
+  </tfoot>
 </table>
 
 <br />

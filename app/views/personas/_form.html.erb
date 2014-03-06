@@ -1,4 +1,4 @@
-<%= form_for(@persona) do |f| %>
+<%= form_for @persona, :html => {:multipart => true } do |f| %>
   <fieldset>
         <legend><R>Registro de Persona</R></legend>
   <% if @persona.errors.any? %>
@@ -17,13 +17,14 @@
       </div>
       <div class="large-3 columns">
         <%= f.label :sexo %>
-        <%= f.text_field :sexo %>
+
+        <%= f.select :sexo, ["Masculino", "Femenino"], :prompt => "Seleccione Sexo" %>
       </div>
     </div>
     <div class="row">
       <div class="large-3 columns">
         <%= f.label :ci %>
-        <%= f.text_field :ci, :placeholder=>"Cedula de Identidad" %>
+        <%= f.text_field :ci %>
       </div>
       <div class="large-3 columns">
         <%= f.label :nombre %>
@@ -57,35 +58,55 @@
 
 
     <div class="row">
-      <div class="large-3 columns">
+      <div class="large-6 columns">
         <%= f.label :profesion_id %>
-        <%= f.number_field :profesion_id %>
+        <%= f.collection_select :profesion_id, Profesion.all, :id, :nombre %>
       </div>
-      <div class="large-3 columns">
-        <%= f.label :correoe %>
-        <%= f.text_field :correoe %>
-      </div>
+
       <div class="large-3 columns">
         <%= f.label :tipo_id %>
-        <%= f.number_field :tipo_id %>
+        <%= f.collection_select :tipo_id, Tipo.all, :id, :nombre %>
       </div>
       <div class="large-3 columns">
         <%= f.label :fecha_nac %>
-        <%= f.text_field :fecha_nac %>
+        <%= f.text_field :fecha_nac, :id => "fecha" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+          <%= f.fields_for :cuentas_correos, [CuentaCorreo.new] do |cc|%>
+              <%= cc.label :correoe, "Cuenta de Correo Primaria" %>
+              <%= cc.text_field :correoe %>
+          <% end %>
+      </div>
+      <div class="large-6 columns">
+        <%= f.fields_for :cuentas_correos, [CuentaCorreo.new]  do |cc|%>
+            <%= cc.label :correoe, "Cuenta de Correo Alternativa" %>
+            <%= cc.text_field :correoe %>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="large-6 columns">
+
+        <%= f.label :universidad_id %>
+        <%= f.collection_select :universidad_id, Universidad.all, :id, :nombre_ciudad, :prompt => '' %>
+
       </div>
     </div>
     <div class="row">
       <div class="large-4 columns">
-        <%= f.label :file_foto %>
-        <%= f.number_field :file_foto %>
+        <%= f.label :ci %>
+        <%= f.file_field :file_ci %>
       </div>
       <div class="large-4 columns">
-        <%= f.label :file_ci %>
-        <%= f.number_field :file_ci %>
+        <%= f.label :foto %>
+        <%= f.file_field :file_foto %>
       </div>
       <div class="large-4 columns">
-        <%= f.label :file_titulo %>
-        <%= f.number_field :file_titulo %>
+        <%= f.label :titulo %>
+        <%= f.file_field :file_titulo %>
       </div>
     </div>
 

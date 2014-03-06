@@ -1,0 +1,31 @@
+<h1>Listing artes</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Invitacion file</th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @artes.each do |arte| %>
+  <tr>
+    <td><%= arte.nombre %></td>
+    <td><%= image_tag arte.invitacion_file.url(:mini) %></td>
+    <td><%= link_to 'Show', arte %></td>
+    <td><%= link_to 'Edit', edit_arte_path(arte) %></td>
+    <td><%= link_to 'Destroy', arte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+  <tr>
+    <td>
+      <%= paginate @artes %>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<%= link_to 'New Arte', new_arte_path %>

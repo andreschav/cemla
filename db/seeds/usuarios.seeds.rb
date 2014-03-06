@@ -1,2 +1,3 @@
-Usuario.find_or_create_by_email("coordinacionscr@gmail.com",:password => '123456', :password_confirmation=>'123456')
-Usuario.find_or_create_by_email("laura@gmail.com",:password => '123456', :password_confirmation=>'123456')
+Usuario.find_or_create_by_email("andres.chavex@gmail.com",:password => '123456789', :password_confirmation=>'123456789', :persona_id => 1)
+Usuario.find_or_create_by_email("coordinacionscr@gmail.com",:password => '123456789', :password_confirmation=>'123456789', :persona_id => 2)
+Usuario.find_or_create_by_email("laura@gmail.com",:password => '123456789', :password_confirmation=>'123456789', :persona_id => 3)

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Nombre:</b>
+  <%= @arte.nombre %>
+</p>
+<p>
+  <b>Invitacion file:</b>
+  <%= image_tag @arte.invitacion_file.url(:thumb) %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_arte_path(@arte) %> |
+<%= link_to 'Back', artes_path %>

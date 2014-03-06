@@ -1,4 +1,21 @@
 Cemla::Application.routes.draw do
+  resources :artes
+
+
+  resources :configuraciones do
+    collection do
+      get "enviar_mails"
+    end
+
+  end
+
+
+  resources :correos
+
+
+  resources :invitaciones
+
+
   resources :fuentes_laborales
 
 
@@ -14,8 +31,8 @@ Cemla::Application.routes.draw do
   devise_for :usuarios
 
   resources :personas  do
-    collection do
-      get 'alumnos'
+    member do
+      get 'crear_usuario'
     end
   end
 

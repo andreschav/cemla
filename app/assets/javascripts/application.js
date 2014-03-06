@@ -12,12 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
+//= require ckeditor-jquery
 //= require foundation
 //= require_tree .
 
-
+$(document).foundation();
 $(function(){
-    $(document).foundation({
+    $.datepicker.setDefaults($.datepicker.regional['es']);
+    $("#fecha").datepicker({
+        dateFormat: "dd/mm/yy"
 
     });
+
 });
+
+

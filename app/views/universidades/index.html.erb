@@ -3,6 +3,8 @@
 <table>
   <tr>
     <th>Nombre</th>
+    <th>Abreviacion</th>
+    <th>Tipo</th>
     <th>Cuidad</th>
     <th></th>
     <th></th>
@@ -12,10 +14,13 @@
 <% @universidades.each do |universidad| %>
   <tr>
     <td><%= universidad.nombre %></td>
-    <td><%= universidad.ciudad_id %></td>
+    <td><%= universidad.abreviacion %></td>
+    <td><%= universidad.tipo %></td>
+    <td><%= universidad.ciudad.nombre %></td>
     <td><%= link_to 'Show', universidad %></td>
     <td><%= link_to 'Edit', edit_universidad_path(universidad) %></td>
-    <td><%= link_to 'Destroy', universidad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', universidad, method: :delete, data: { confirm: { title: 'Desea eliminar!',
+                                                                                body: 'Esta accion no se revertira' }.to_json} %></td>
   </tr>
 <% end %>
 </table>

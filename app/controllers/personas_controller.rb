@@ -2,7 +2,8 @@ class PersonasController < ApplicationController
   # GET /personas
   # GET /personas.json
   def index
-    @personas = Persona.all
+    @search = Persona.search(params[:search])
+    @personas = @search.page(params[:page]).per(10)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -57,16 +58,21 @@ class PersonasController < ApplicationController
   # PUT /personas/1.json
   def update
     @persona = Persona.find(params[:id])
-
-    respond_to do |format|
-      if @persona.update_attributes(params[:persona])
-        format.html { redirect_to @persona, notice: 'Persona was successfully updated.' }
-        format.json { head :no_content }
+    if @persona.usuario.nil?
+      if @persona.build_usuario(:email=>"coordinacionscr@gmail.com",:password => '123456789', :password_confirmation=>'123456789').save
+        redirect_to @persona, notice: 'Persona was successfully updated.'
       else
-        format.html { render action: "edit" }
-        format.json { render json: @persona.errors, status: :unprocessable_entity }
+        redirect_to crear_usuario_persona_path(@persona), notice: 'Error intente nuevamente.'
+      end
+
+    else
+      if @persona.update_attributes(params[:persona])
+         redirect_to @persona, notice: 'Persona was successfully updated.'
+      else
+        render action: "edit"
       end
     end
+
   end
 
   # DELETE /personas/1
@@ -87,5 +93,8 @@ class PersonasController < ApplicationController
       format.html {redirect_to personas_url}
       format.json { render json: @personas }
     end
+  end
+  def crear_usuario
+    @persona = Persona.find(params[:id])
   end
 end

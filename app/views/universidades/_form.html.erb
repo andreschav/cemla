@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :ciudad_id %><br />
-    <%= f.number_field :ciudad_id %>
+    <%= f.collection_select :ciudad_id, Ciudad.all, :id, :nombre %>
   </div>
   <div class="actions">
     <%= f.submit %>

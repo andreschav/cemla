@@ -1,0 +1,3 @@
+Persona.create(:ci => 4114230, :nombre => 'Andres Percy', :apaterno => 'Chavez', :amaterno => 'Ortuno', :sexo => 'MASCULINO', :profesion_id =>1,:universidad_id => 65, :cargo_id => 3, :tipo_id => 3)
+Persona.create(:ci => 1111111, :nombre => 'Jimena', :apaterno => 'Barrientos', :amaterno => 'Eduardo', :sexo => 'FEMENINO', :profesion_id =>1,:universidad_id => 65, :cargo_id => 3, :tipo_id => 3)
+Persona.create(:ci => 2222222, :nombre => 'Laura', :apaterno => 'Barrientos', :amaterno => 'Eduardo', :sexo => 'FEMENINO', :profesion_id =>1,:universidad_id => 65, :cargo_id => 3, :tipo_id =>3)

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @correo.nombre %>
+</p>
+
+<p>
+  <b>Login:</b>
+  <%= @correo.login %>
+</p>
+
+<p>
+  <b>Pass:</b>
+  <%= @correo.pass %>
+</p>
+<p>
+  <b>Cantidad:</b>
+  <%= @correo.cantidad_disponible %>
+</p>
+
+<p>
+  <b>Enviados:</b>
+  <%= @correo.cantidad_enviados %>
+</p>
+
+<p>
+  <b>Restantes:</b>
+  <%= @correo.cantidad_restantes %>
+</p>
+
+
+<%= link_to 'Edit', edit_correo_path(@correo) %> |
+<%= link_to 'Back', correos_path %>

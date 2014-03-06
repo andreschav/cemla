@@ -1,0 +1,50 @@
+<%= form_for(@invitacion) do |f| %>
+  <% if @invitacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@invitacion.errors.count, "error") %> prohibited this invitacion from being saved:</h2>
+
+      <ul>
+      <% @invitacion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre, :placeholder => "Introducir un nombre para esta plantilla" %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_adjunto %><br />
+    <%= f.select :tipo_adjunto, ["ADJUNTO", "MOSTRAR"] %>
+  </div>
+  <div class="field">
+    <%= f.label :logo %><br />
+    <%= f.file_field :logo %>
+  </div>
+  <div class="field">
+    <%= f.label :asunto %><br />
+    <%= f.text_field :asunto, :placeholder => "Este texto se mostrara tambien como asunto en el correo a ser enviado" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cabeza %><br />
+    <%= f.text_area :cabeza , :class=>'ckeditor' %>
+  </div>
+  <div class="field">
+    <%= f.label :cuerpo %><br />
+    <%= f.text_area :cuerpo , :class=>'ckeditor' %>
+  </div>
+  <div class="field">
+    <%= f.label :pie %><br />
+    <%= f.text_area :pie , :class=>'ckeditor' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.text_field :fecha, :id=> "fecha", :placeholder => "Fecha del programa" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

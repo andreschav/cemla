@@ -1,0 +1,33 @@
+common: &common
+  address: "smtp.gmail.com"
+  port: 587
+  authentication: "plain"
+  enable_starttls_auto: true
+  domain: "www.cemla-formacion.com"
+
+development:
+  account_1:
+    <<: *common
+    user_name: "cemla.marketing1@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  account_2:
+    <<: *common
+    user_name: "cemla.marketing2@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  account_3:
+    <<: *common
+    user_name: "cemla.marketing3@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  account_4:
+    <<: *common
+    user_name: "cemla.marketing4@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  account_5:
+    <<: *common
+    user_name: "cemla.marketing5@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "

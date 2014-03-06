@@ -38,5 +38,5 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'hint', 'hints'
   inflect.irregular 'action', 'actions'
   inflect.irregular 'pais', 'paises'
-
+  inflect.irregular 'configuracion', 'configuraciones'
 end

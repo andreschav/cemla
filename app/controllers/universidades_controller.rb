@@ -44,6 +44,7 @@ class UniversidadesController < ApplicationController
 
     respond_to do |format|
       if @universidad.save
+
         format.html { redirect_to @universidad, notice: 'Universidad was successfully created.' }
         format.json { render json: @universidad, status: :created, location: @universidad }
       else

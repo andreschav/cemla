@@ -1,0 +1,70 @@
+<%= form_tag( {action: "enviar_mails"}, method: "get", :class => "form-horizontal")  do |f| %>
+    <p><b>Seleccione la Plantilla</b></p>
+
+
+    <%= select_tag "invitacion", options_for_select( Invitacion.all.collect{ |u| [u.nombre, u.id] })  %>
+
+
+    <div class="row">
+      <div class="small-5 columns">
+        <p><b>Seleccione destinatarios:</b></p>
+
+        <label for="checkbox1">
+          <%= check_box_tag "profesion_id[]", 0 %>
+          Todos
+        </label>
+
+        <% Profesion.all.each do |p| %>
+
+            <label for="checkbox1">
+              <%= check_box_tag "profesion_id[]", p.id %>
+              <%= p.nombre%>
+            </label>
+        <% end %>
+
+      </div>
+      <div class="small-7 columns">
+        <a href="#" data-reveal-id="myModal" data-reveal class="button large expand tiny secondary">Seleccionar Afiches</a>
+        <table style=" width: 100%">
+          <thead>
+          <tr>
+            <td>Item</td>
+            <td>Nombre</td>
+            <td>Imagen</td>
+          </tr>
+          </thead>
+          <tbody class="artes_body">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="myModal" class="reveal-modal small" data-reveal>
+      <h3>Lista de Afiches.</h3>
+
+          <legend>Buscar Afiches</legend>
+          <div class="input-append">
+            <%= text_field_tag :artes_buscar,'',:placeholder => "Buscar por Nombre" %>
+          </div>
+
+      <table style=" width: 100%">
+        <thead>
+            <tr>
+              <td>Item</td>
+              <td>Nombre</td>
+              <td>Imagen</td>
+            </tr>
+        </thead>
+        <tbody id="artes_body">
+
+        </tbody>
+      </table>
+
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <%= submit_tag 'Enviar' %>
+
+<% end %>
+

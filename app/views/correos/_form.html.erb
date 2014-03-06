@@ -1,0 +1,46 @@
+<%= form_for(@correo) do |f| %>
+  <% if @correo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@correo.errors.count, "error") %> prohibited this correo from being saved:</h2>
+
+      <ul>
+      <% @correo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
+    <%= f.label :pass %><br />
+    <%= f.text_field :pass %>
+  </div>
+
+    <div class="field">
+      <%= f.label :cantidad_disponible %><br />
+      <%= f.text_field :cantidad_disponible %>
+    </div>
+    <div class="field">
+      <%= f.label :cantidad_enviados %><br />
+      <%= f.text_field :cantidad_enviados %>
+    </div>
+    <div class="field">
+      <%= f.label :cantidad_restantes %><br />
+      <%= f.text_field :cantidad_restantes %>
+    </div>
+    <div class="field">
+      <%= f.label :fecha %><br />
+      <%= f.text_field :fecha %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

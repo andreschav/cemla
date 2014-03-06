@@ -1,0 +1,36 @@
+<%= form_for @persona do |f| %>
+    <% if @persona.usuario.nil? %>
+        Crear Usuario
+        <%= f.fields_for Usuario.new  do |user| %>
+            <div class="field">
+              <%=user.label :email, "E-mail"  %>
+              <%= user.text_field :email %>
+            </div>
+            <div class="field">
+              <%= user.label :password, "Contrasena"  %>
+              <%= user.password_field :password %>
+            </div>
+            <div class="field">
+                Repita Contrasena:</br><%= user.password_field :password_confirmation %>
+            </div>
+
+
+        <% end %>
+    <% else %>
+        Editar Usuario
+        <%= f.fields_for :usuario  do |user| %>
+            <div class="field">
+              <%=user.label :email, "E-mail"  %>
+              <%= user.text_field :email %>
+            </div>
+            <div class="field">
+              <%= user.label :password, "Contrasena"  %>
+              <%= user.password_field :password %>
+            </div>
+            <div class="field">
+              Repita Contrasena:</br><%= user.password_field :password_confirmation %>
+            </div>
+        <% end %>
+     <% end %>
+    <div><%= f.submit "Crear Usuario" %></div>
+<% end %>
