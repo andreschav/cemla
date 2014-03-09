@@ -4,7 +4,9 @@
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
-<%= raw(@invitacion.carta) %><br/>
-<%= image_tag attachments['imagen'].url %>
+<%= raw(@plantilla.cabeza) %><br/>
+<%= raw(@plantilla.cuerpo) %><br/>
+<%= raw(@plantilla.pie) %><br/>
+
 </body>
 </html>

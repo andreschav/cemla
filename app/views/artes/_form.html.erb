@@ -11,13 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :invitacion_file %><br />
-    <%= f.file_field :invitacion_file %>
-  </div>
+
   <div class="field">
     <%= f.label :nombre %><br />
     <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :invitacion_file, "Afiche" %><br />
+    <%= f.file_field :invitacion_file %>
   </div>
   <div class="actions">
     <%= f.submit %>

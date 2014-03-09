@@ -4,12 +4,12 @@
   <%= @arte.nombre %>
 </p>
 <p>
-  <b>Invitacion file:</b>
+
   <%= image_tag @arte.invitacion_file.url(:thumb) %>
 </p>
 
 
 
 
-<%= link_to 'Edit', edit_arte_path(@arte) %> |
-<%= link_to 'Back', artes_path %>
+<%= link_to 'Editar', edit_arte_path(@arte), :class => 'button small' %> |
+<%= link_to 'Atras', artes_path, :class => 'button small' %>

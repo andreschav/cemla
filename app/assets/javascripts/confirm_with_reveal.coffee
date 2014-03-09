@@ -26,14 +26,14 @@
 $ = this.jQuery
 
 localization_defaults =
-  title: 'Are you sure?'
-  body: 'This action cannot be undone.'
+  title: 'Esta seguro?'
+  body: 'Esta accion no podra deshacerse.'
   password: false
   prompt: 'Type <i>%s</i> to continue:'
-  ok: 'Confirm'
-  ok_class: 'button radius alert inline confirm'
-  cancel: 'Cancel'
-  cancel_class: 'button radius secondary inline'
+  ok: 'Confirmar'
+  ok_class: 'button radius alert inline confirm small'
+  cancel: 'Cancelar'
+  cancel_class: 'button radius secondary inline small'
 
 reveal_confirm = (element) ->
 
@@ -46,7 +46,7 @@ reveal_confirm = (element) ->
     return window.confirm confirm
 
   modal = $ """
-    <div class='reveal-modal medium' data-reveal>
+    <div class='reveal-modal tiny' data-reveal>
       <h2 class='header'></h2>
       <p class='warning'></p>
       <div class='footer'>

@@ -36,7 +36,9 @@ $ ->
                      </td>
                      <td>' + afiche['nombre'] + '</td>
                      <td>
-                       <img alt="Imagen Afiche" src=' + afiche['invitacion_file']['mini']['url'] + '>
+                         <a class="gallery cboxElement" href=' + afiche['invitacion_file']['url'] + '>
+                           <img alt="Imagen Afiche" src=' + afiche['invitacion_file']['mini']['url'] + '>
+                         </a>
                      </td>
                    </tr>')
                )

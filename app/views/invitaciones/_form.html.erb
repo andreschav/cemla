@@ -10,22 +10,27 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
+  <div class="field small-9 columns">
     <%= f.label :nombre %><br />
     <%= f.text_field :nombre, :placeholder => "Introducir un nombre para esta plantilla" %>
   </div>
-  <div class="field">
+  <div class="field small-3 columns">
     <%= f.label :tipo_adjunto %><br />
     <%= f.select :tipo_adjunto, ["ADJUNTO", "MOSTRAR"] %>
   </div>
-  <div class="field">
-    <%= f.label :logo %><br />
-    <%= f.file_field :logo %>
-  </div>
-  <div class="field">
+  <div class="field small-9 columns">
     <%= f.label :asunto %><br />
     <%= f.text_field :asunto, :placeholder => "Este texto se mostrara tambien como asunto en el correo a ser enviado" %>
   </div>
+  <div class="field small-3 columns">
+    <%= f.label :fecha %><br />
+    <%= f.text_field :fecha, :id=> "fecha", :placeholder => "Fecha del programa" %>
+  </div>
+  <div class="field small-4 columns">
+    <%= f.label :logo %><br />
+    <%= f.file_field :logo %>
+  </div>
+  <div class="row"></div>
 
   <div class="field">
     <%= f.label :cabeza %><br />
@@ -40,10 +45,7 @@
     <%= f.text_area :pie , :class=>'ckeditor' %>
   </div>
 
-  <div class="field">
-    <%= f.label :fecha %><br />
-    <%= f.text_field :fecha, :id=> "fecha", :placeholder => "Fecha del programa" %>
-  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

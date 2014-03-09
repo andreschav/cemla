@@ -1,32 +1,32 @@
-<h1>Listing invitaciones</h1>
+<h3>Planillas</h3>
 
 <table>
-  <tr>
-    <th>Nombre</th>
-    <th>Asunto</th>
-    <th>Fecha</th>
-    <th>Tipo de Adjunto</th>
-    <th>Logo</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @invitaciones.each do |invitacion| %>
-  <tr>
-    <td><%= invitacion.nombre %></td>
-    <td><%= invitacion.asunto %></td>
-    <td><%= invitacion.fecha %></td>
-    <td><%= invitacion.tipo_adjunto %></td>
-    <td><%= image_tag  invitacion.logo.url(:thumb) %></td>
-
-    <td><%= link_to 'Show', invitacion %></td>
-    <td><%= link_to 'Edit', edit_invitacion_path(invitacion) %></td>
-    <td><%= link_to 'Destroy', invitacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Asunto</th>
+        <th>Fecha</th>
+        <th>Tipo de Adjunto</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+  </thead>
+  <tbody>
+    <% @invitaciones.each do |invitacion| %>
+      <tr>
+        <td><%= invitacion.nombre %></td>
+        <td><%= invitacion.asunto %></td>
+        <td><%= invitacion.fecha %></td>
+        <td><%= invitacion.tipo_adjunto %></td>
+        <td><%= link_to 'Mostrar', invitacion %></td>
+        <td><%= link_to 'Editar', edit_invitacion_path(invitacion) %></td>
+        <td><%= link_to 'Eliminar', invitacion, method: :delete, data: { confirm: 1 } %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <br />
 
-<%= link_to 'New Invitacion', new_invitacion_path %>
+<%= link_to 'Nueva Plantilla', new_invitacion_path, :class => 'button small' %>

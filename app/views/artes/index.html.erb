@@ -1,31 +1,39 @@
-<h1>Listing artes</h1>
+<h3>Afiches</h3>
 
 <table>
-  <tr>
-    <th>Nombre</th>
-    <th>Invitacion file</th>
+  <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Afiche</th>
 
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <% @artes.each do |arte| %>
+          <tr>
+            <td><%= arte.nombre %></td>
+            <td><%= link_to(image_tag(arte.invitacion_file.url(:mini)),arte.invitacion_file.url, :class => 'gallery') %></td>
+            <td><%= link_to 'Descargar', arte.invitacion_file.url %></td>
+            <td><%= link_to 'Mostrar', arte %></td>
+            <td><%= link_to 'Editar', edit_arte_path(arte) %></td>
+            <td><%= link_to 'Eliminar', arte, method: :delete, data: { confirm: 1 } %></td>
+          </tr>
+      <% end %>
+  </tbody>
+  <tfoot>
+      <tr>
+        <td>
+          <%= paginate @artes %>
+        </td>
+      </tr>
+  </tfoot>
 
-<% @artes.each do |arte| %>
-  <tr>
-    <td><%= arte.nombre %></td>
-    <td><%= image_tag arte.invitacion_file.url(:mini) %></td>
-    <td><%= link_to 'Show', arte %></td>
-    <td><%= link_to 'Edit', edit_arte_path(arte) %></td>
-    <td><%= link_to 'Destroy', arte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-  <tr>
-    <td>
-      <%= paginate @artes %>
-    </td>
-  </tr>
 </table>
 
 <br />
 
-<%= link_to 'New Arte', new_arte_path %>
+<%= link_to 'Nuevo Afiche', new_arte_path, :class => 'button small' %>

@@ -1,30 +1,37 @@
-<h1>Listing universidades</h1>
+<h3>Universidades</h3>
 
-<table>
-  <tr>
-    <th>Nombre</th>
-    <th>Abreviacion</th>
-    <th>Tipo</th>
-    <th>Cuidad</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @universidades.each do |universidad| %>
-  <tr>
-    <td><%= universidad.nombre %></td>
-    <td><%= universidad.abreviacion %></td>
-    <td><%= universidad.tipo %></td>
-    <td><%= universidad.ciudad.nombre %></td>
-    <td><%= link_to 'Show', universidad %></td>
-    <td><%= link_to 'Edit', edit_universidad_path(universidad) %></td>
-    <td><%= link_to 'Destroy', universidad, method: :delete, data: { confirm: { title: 'Desea eliminar!',
-                                                                                body: 'Esta accion no se revertira' }.to_json} %></td>
-  </tr>
-<% end %>
+<table class="responsive">
+  <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Abreviacion</th>
+        <th>Tipo</th>
+        <th>Cuidad</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+  </thead>
+  <tbody>
+    <% @universidades.each do |universidad| %>
+      <tr>
+        <td><%= universidad.nombre %></td>
+        <td><%= universidad.abreviacion %></td>
+        <td><%= universidad.tipo %></td>
+        <td><%= universidad.ciudad.nombre %></td>
+        <td><%= link_to 'Mostrar', universidad %></td>
+        <td><%= link_to 'Editar', edit_universidad_path(universidad) %></td>
+        <td><%= link_to 'Eliminar', universidad, method: :delete, data: { confirm: 1} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="7"><%= paginate @universidades %></td>
+    </tr>
+  </tfoot>
 </table>
 
 <br />
 
-<%= link_to 'New Universidad', new_universidad_path %>
+<%= link_to 'Nueva Universidad', new_universidad_path, :class => 'button small'  %>

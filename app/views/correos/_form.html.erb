@@ -11,36 +11,36 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field small-4 columns">
     <%= f.label :nombre %><br />
     <%= f.text_field :nombre %>
   </div>
-  <div class="field">
+  <div class="field small-4 columns">
     <%= f.label :login %><br />
     <%= f.text_field :login %>
   </div>
-  <div class="field">
+  <div class="field small-4 columns">
     <%= f.label :pass %><br />
     <%= f.text_field :pass %>
   </div>
 
-    <div class="field">
+    <div class="field small-3 columns">
       <%= f.label :cantidad_disponible %><br />
       <%= f.text_field :cantidad_disponible %>
     </div>
-    <div class="field">
+    <div class="field small-3 columns">
       <%= f.label :cantidad_enviados %><br />
       <%= f.text_field :cantidad_enviados %>
     </div>
-    <div class="field">
+    <div class="field small-3 columns">
       <%= f.label :cantidad_restantes %><br />
       <%= f.text_field :cantidad_restantes %>
     </div>
-    <div class="field">
+    <div class="field small-3 columns">
       <%= f.label :fecha %><br />
-      <%= f.text_field :fecha %>
+      <%= f.text_field :fecha, :id=>'fecha' %>
     </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="actions small-12 columns">
+       <%= f.submit %>
+    </div>
 <% end %>

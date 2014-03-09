@@ -1,57 +1,28 @@
 class Notificacion < ActionMailer::Base
   default from: "coordinacionscr@gmail.com"
 
-  def notificacion(destinatarios,plantilla,afiches)
+  def notificacion(destinatarios,plantilla,afiches,cuenta)
     @afiches = afiches
-    @plantilla = plantilla
+    Notificacion.mailer_name= cuenta
+    file_plantilla = ''
 
-
-    if(plantilla.id == 1)
-      afiches.all.each do |a|
-        attachments['imagen' + a.id] = File.read( Rails.root.join("#{Rails.root.to_s + "/public/" + a.invitacionfile.to_s}") )
+    if(plantilla.tipo_adjunto == 'ADJUNTO')
+      afiches.each do |a|
+        attachments['imagen' + a.id.to_s + File.extname(a.invitacion_file.to_s) ] = File.read( Rails.root.join("#{Rails.root.to_s + "/public/" + a.invitacion_file.to_s}") )
+        file_plantilla = 'plantilla1'
       end
     else
-      afiches.all.each do |a|
-        attachments.inline['imagen' + a.id] = File.read( Rails.root.join("#{Rails.root.to_s + "/public/" + a.invitacionfile.to_s}") )
+      afiches.each do |a|
+        attachments.inline['imagen' + a.id.to_s + File.extname(a.invitacion_file.to_s) ] = File.read( Rails.root.join("#{Rails.root.to_s + "/public/" + a.invitacion_file.to_s}") )
+        file_plantilla = 'plantilla2'
       end
     end
 
-    grupo_destinatarios = Array.new
-
-    destinatarios.all.each do |d|
-        grupo_destinatarios.push(d.correoe)
-    end
-
-    cuentas = Correo.where("cantidad_restantes > 0")
-    Notificacion.mailer_name= cuenta_correo
-
-    mail_cant =[]
-    grupos_mail=[]
-    cuentas.each do |cu|
-          grupos = (1..cu.cantidad_restantes).to_a.in_groups_of(500)
-
-          grupos.each do |g|
-              g = g.reject(&:nil?)
-               # ya se tiene las cantidades de correos a enviar por grupos de cuentas agrupados de 500
-          end
-    end
-
-
-
-
-
-
-
-    mail(:to => grupo_destinatarios, :subject => "#{@plantilla.asunto.to_s}")do |format|
+    mail(:to => destinatarios, :subject => "#{@plantilla.asunto.to_s}") do |format|
       format.html {
-        render "notificacion/" + plantilla
+        render "notificacion/" + file_plantilla
       }
     end
-
-
-
-
-
   end
 
 end

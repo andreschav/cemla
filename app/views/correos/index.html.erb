@@ -1,35 +1,37 @@
-<h1>Listing correos</h1>
+<h3>Correos</h3>
 
 <table>
-  <tr>
-    <th>Nombre</th>
-    <th>Login</th>
-    <th>Pass</th>
-    <th>Cantidad</th>
-    <th>Enviados</th>
-    <th>Restantes</th>
-    <th>Fecha</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Login</th>
+        <th>Pass</th>
+        <th>Cantidad</th>
+        <th>Enviados</th>
+        <th>Restantes</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+  </thead>
+  <tbody>
+    <% @correos.each do |correo| %>
+      <tr>
+        <td><%= correo.nombre %></td>
+        <td><%= correo.login %></td>
+        <td><%= correo.pass %></td>
+        <td><%= correo.cantidad_disponible %></td>
+        <td><%= correo.cantidad_enviados %></td>
+        <td><%= correo.cantidad_restantes %></td>
+        <td><%= link_to 'Mostrar', correo %></td>
+        <td><%= link_to 'Editar', edit_correo_path(correo) %></td>
+        <td><%= link_to 'Eliminar', correo, method: :delete, data: { confirm: 1 } %></td>
+      </tr>
+    <% end %>
+  </tbody>
 
-<% @correos.each do |correo| %>
-  <tr>
-    <td><%= correo.nombre %></td>
-    <td><%= correo.login %></td>
-    <td><%= correo.pass %></td>
-    <td><%= correo.cantidad_disponible %></td>
-    <td><%= correo.cantidad_enviados %></td>
-    <td><%= correo.cantidad_restantes %></td>
-    <td><%= correo.fecha %></td>
-    <td><%= link_to 'Show', correo %></td>
-    <td><%= link_to 'Edit', edit_correo_path(correo) %></td>
-    <td><%= link_to 'Destroy', correo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Correo', new_correo_path %>
+<%= link_to 'Nuevo Correo', new_correo_path, :class => 'button small' %>

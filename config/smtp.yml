@@ -6,27 +6,27 @@ common: &common
   domain: "www.cemla-formacion.com"
 
 development:
-  account_1:
+  cuenta_1:
     <<: *common
     user_name: "cemla.marketing1@gmail.com"
     password: "cemlamarketing"
     from: "Cemla Marketing "
-  account_2:
+  cuenta_2:
     <<: *common
     user_name: "cemla.marketing2@gmail.com"
     password: "cemlamarketing"
     from: "Cemla Marketing "
-  account_3:
+  cuenta_3:
     <<: *common
     user_name: "cemla.marketing3@gmail.com"
     password: "cemlamarketing"
     from: "Cemla Marketing "
-  account_4:
+  cuenta_4:
     <<: *common
     user_name: "cemla.marketing4@gmail.com"
     password: "cemlamarketing"
     from: "Cemla Marketing "
-  account_5:
+  cuenta_5:
     <<: *common
     user_name: "cemla.marketing5@gmail.com"
     password: "cemlamarketing"

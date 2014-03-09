@@ -4,7 +4,11 @@
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
-<%= raw(@invitacion.carta) %><br/>
-<%= image_tag attachments['imagen'].url %>
+    <%= raw(@plantilla.cabeza) %><br/>
+    <% @afiches.each do |a| %>
+        <%= image_tag attachments['imagen'+ a.id.to_s  + File.extname(a.invitacion_file.to_s) ].url %>
+    <% end %>
+    <%= raw(@plantilla.cuerpo) %><br/>
+    <%= raw(@plantilla.pie) %><br/>
 </body>
 </html>

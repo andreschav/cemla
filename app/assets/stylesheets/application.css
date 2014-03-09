@@ -12,6 +12,7 @@
  *= require foundation
  *= require jquery.ui.all
  *= require foundation_and_overrides
+ *= require jquery.colorbox-example1
  *= require_tree .
 
 

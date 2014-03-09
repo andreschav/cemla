@@ -1,14 +1,32 @@
-<h1>Personas</h1>
+<h3>Personas</h3>
 <%=  form_for @search, :html =>{ :class=>"form-search2 form-inline" } do |f| %>
     <legend>Buscar Personas</legend>
-    <div class="input-append">
 
+    <div class="small-3 columns">
+      <%= f.text_field :ci_equals, :placeholder => "CI" %>
+    </div>
+    <div class="small-3 columns">
       <%= f.text_field :nombre_contains, :placeholder => "Nombre" %>
+    </div>
+    <div class="small-3 columns">
       <%= f.text_field :apaterno_contains, :placeholder => "Apellido Paterno" %>
+    </div>
+    <div class="small-3 columns">
       <%= f.text_field :amaterno_contains, :placeholder => "Apellido Materno" %>
-      <%= f.collection_select :profesion_id_equals, Profesion.all, :id, :nombre,{:include_blank=>"Seleccione profesion"} %>
-      <%= f.collection_select :tipo_id_equals, Tipo.all, :id, :nombre,{:include_blank=>"Seleccione Tipo"} %>
-      <button class="btn btn-success">Buscar</button>
+    </div>
+
+    <div class="small-3 columns">
+      <%= f.collection_select :tipo_id_equals, Tipo.all, :id, :nombre,{:include_blank=>"Tipo.."} %>
+    </div>
+    <div class="small-5 columns">
+      <%= f.text_field :cuentas_correos_correoe_contains, :placeholder => "Correo Electronico" %>
+    </div>
+    <div class="small-4 columns">
+      <%= f.collection_select :profesion_id_equals, Profesion.all, :id, :nombre,{:include_blank=>"Profesiones.."} %>
+    </div>
+
+    <div class="small-12 columns">
+      <button class="btn btn-success tiny">Buscar</button>
     </div>
 <% end %>
 
@@ -27,7 +45,7 @@
         <th></th>
       </tr>
   </thead>
-    <tbody>
+  <tbody>
     <% @personas.each do |persona| %>
       <tr>
         <td><%= link_to persona.ci ,persona %></td>
@@ -44,10 +62,10 @@
         <% else %>
             <td><%= link_to 'Editar Usuario', crear_usuario_persona_path(persona) %></td>
         <% end %>
-        <td><%= link_to 'Eliminar', persona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Eliminar', persona, method: :delete, :data => { :confirm => 1 } %></td>
       </tr>
     <% end %>
-    </tbody>
+  </tbody>
   <tfoot>
     <tr>
       <td colspan="9"><%= paginate @personas  %></td>
@@ -57,4 +75,4 @@
 
 <br />
 
-<%= link_to 'New Persona', new_persona_path %>
+<%= link_to 'Nueva Persona', new_persona_path , :class => 'button tiny'%>

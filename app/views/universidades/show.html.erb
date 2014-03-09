@@ -6,10 +6,17 @@
 </p>
 
 <p>
+  <b>Abreviacion:</b>
+  <%= @universidad.abreviacion %>
+</p>
+<p>
   <b>Cuidad:</b>
   <%= @universidad.ciudad.nombre %>
 </p>
+<p>
+  <b>Tipo:</b>
+  <%= @universidad.tipo %>
+</p>
 
-
-<%= link_to 'Edit', edit_universidad_path(@universidad) %> |
-<%= link_to 'Back', universidades_path %>
+<%= link_to 'Editar', edit_universidad_path(@universidad), :class => 'button small' %> |
+<%= link_to 'Atras', universidades_path, :class => 'button small'  %>

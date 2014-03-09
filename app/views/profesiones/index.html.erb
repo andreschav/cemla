@@ -1,23 +1,27 @@
-<h4>Listado de Profesionales</h4>
+<h3>Profesiones</h3>
 
 <table>
-  <tr>
-    <th>Nombre</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <thead>
+      <tr>
+        <th>Nombre</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+  </thead>
+  <tbody>
+    <% @profesiones.each do |profesion| %>
+      <tr>
+        <td><%= profesion.nombre %></td>
+        <td><%= link_to 'Mostrar', profesion %></td>
+        <td><%= link_to 'Editar', edit_profesion_path(profesion) %></td>
+        <td><%= link_to 'Eliminar', profesion, method: :delete, data: { confirm: 1 } %></td>
+      </tr>
+    <% end %>
+  </tbody>
 
-<% @profesiones.each do |profesion| %>
-  <tr>
-    <td><%= profesion.nombre %></td>
-    <td><%= link_to 'Show', profesion %></td>
-    <td><%= link_to 'Edit', edit_profesion_path(profesion) %></td>
-    <td><%= link_to 'Destroy', profesion, method: :delete, data: { confirm: 1 } %></td>
-  </tr>
-<% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Profesion', new_profesion_path %>
+<%= link_to 'Nueva Profesion', new_profesion_path, :class => 'button small' %>

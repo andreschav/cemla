@@ -15,6 +15,8 @@
 //= require jquery.ui.all
 //= require ckeditor-jquery
 //= require foundation
+//= require jquery.colorbox
+//= require jquery.colorbox-es
 //= require_tree .
 
 $(document).foundation();
@@ -24,7 +26,7 @@ $(function(){
         dateFormat: "dd/mm/yy"
 
     });
-
+    $(".gallery").colorbox();
 });
 
 

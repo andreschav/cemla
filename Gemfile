@@ -31,6 +31,7 @@ gem 'kaminari'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'ckeditor_rails'
+gem 'jquery-colorbox-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

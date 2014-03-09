@@ -1,6 +1,6 @@
 <%= form_for @persona, :html => {:multipart => true } do |f| %>
   <fieldset>
-        <legend><R>Registro de Persona</R></legend>
+        <legend><R><%= titulo  %></R></legend>
   <% if @persona.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@persona.errors.count, "error") %> prohibited this persona from being saved:</h2>
@@ -73,18 +73,28 @@
       </div>
     </div>
     <div class="row">
-      <div class="large-6 columns">
-          <%= f.fields_for :cuentas_correos, [CuentaCorreo.new] do |cc|%>
-              <%= cc.label :correoe, "Cuenta de Correo Primaria" %>
-              <%= cc.text_field :correoe %>
-          <% end %>
-      </div>
-      <div class="large-6 columns">
-        <%= f.fields_for :cuentas_correos, [CuentaCorreo.new]  do |cc|%>
-            <%= cc.label :correoe, "Cuenta de Correo Alternativa" %>
-            <%= cc.text_field :correoe %>
-        <% end %>
-      </div>
+      <% if params[:action] == 'edit'  %>
+          <div class="large-6 columns">
+            <%= f.fields_for :cuentas_correos do |cc|%>
+                <%= cc.label :correoe, "Cuenta de Correo" %>
+                <%= cc.text_field :correoe %>
+            <% end %>
+          </div>
+      <% else %>
+
+          <div class="large-6 columns">
+              <%= f.fields_for :cuentas_correos, [CuentaCorreo.new] do |cc|%>
+                  <%= cc.label :correoe, "Cuenta de Correo Primaria" %>
+                  <%= cc.text_field :correoe %>
+              <% end %>
+          </div>
+          <div class="large-6 columns">
+            <%= f.fields_for :cuentas_correos, [CuentaCorreo.new]  do |cc|%>
+                <%= cc.label :correoe, "Cuenta de Correo Alternativa" %>
+                <%= cc.text_field :correoe %>
+            <% end %>
+          </div>
+      <% end %>
     </div>
     <div class="row">
 
@@ -114,7 +124,7 @@
 
 
       <div class="actions">
-        <%= f.submit 'Guardar', :data => { :confirm => 1 },:class=> 'small button' %>
+        <%= f.submit 'Guardar', :data => { :confirm => 1 },:class=> 'button tiny' %>
       </div>
   </fieldset>
 <% end %>

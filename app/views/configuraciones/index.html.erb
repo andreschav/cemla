@@ -1,5 +1,5 @@
 <%= form_tag( {action: "enviar_mails"}, method: "get", :class => "form-horizontal")  do |f| %>
-    <p><b>Seleccione la Plantilla</b></p>
+    <h3><b>Envio de correos</b></h3>
 
 
     <%= select_tag "invitacion", options_for_select( Invitacion.all.collect{ |u| [u.nombre, u.id] })  %>
@@ -15,14 +15,15 @@
         </label>
 
         <% Profesion.all.each do |p| %>
-
             <label for="checkbox1">
               <%= check_box_tag "profesion_id[]", p.id %>
               <%= p.nombre%>
+              <b>[<%= Persona.where(:profesion_id => p.id).size %>]</b>
             </label>
         <% end %>
-
       </div>
+
+
       <div class="small-7 columns">
         <a href="#" data-reveal-id="myModal" data-reveal class="button large expand tiny secondary">Seleccionar Afiches</a>
         <table style=" width: 100%">

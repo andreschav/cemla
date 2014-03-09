@@ -1,142 +1,149 @@
-<p id="notice"><%= notice %></p>
+<h3>Datos Personales</h3>
+<p id="notice" xmlns="http://www.w3.org/1999/html"><%= notice %></p>
 
-<div class="small-4 columns">
-  <div class="row collapse">
-      <div class="small-3 large-2 columns">
-        <span class="prefix">C.I:</span>
+    <div class="small-4 columns">
+      <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span class="prefix">C.I:</span>
+          </div>
+
+          <div class="small-9 large-10 columns">
+              <input type="text" value = '<%= @persona.ci %>' >
+          </div>
       </div>
+    </div>
 
-      <div class="small-9 large-10 columns">
-          <input type="text" value = '<%= @persona.ci %>' >
+    <div class="small-8 columns">
+      <div class="row collapse">
+        <div class="small-3 large-2 columns">
+          <span class="prefix">Nombre:</span>
+        </div>
+
+
+        <div class="small-9 large-10 columns">
+          <input type="text" value ='<%= @persona.nombre_completo %>'>
+        </div>
       </div>
-  </div>
+    </div>
+
+    <div class="small-4 columns">
+      <div class="row collapse">
+        <div class="small-3 large-2 columns">
+          <span class="prefix">Sexo:</span>
+        </div>
+
+        <div class="small-9 large-10 columns">
+          <input type="text" value = <%= @persona.sexo %> >
+        </div>
+      </div>
+    </div>
+
+    <div class="small-8 columns">
+      <div class="row collapse">
+        <div class="small-3 large-2 columns">
+          <span class="prefix">Profesion:</span>
+        </div>
+
+
+        <div class="small-9 large-10 columns">
+          <input type="text" value ='<%= @persona.profesion.nombre %>'>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-4 columns">
+      <div class="row collapse">
+        <div class="small-5 large-4 columns">
+          <span class="prefix">Fono Movil:</span>
+        </div>
+
+        <div class="small-7 large-8 columns">
+          <input type="text" value = <%= @persona.fono_movil %> >
+        </div>
+      </div>
+    </div>
+
+    <div class="small-4 columns">
+      <div class="row collapse">
+        <div class="small-5 large-4 columns">
+          <span class="prefix">Fono Ofi:</span>
+        </div>
+
+
+        <div class="small-7 large-8 columns">
+          <input type="text" value ='<%= @persona.fono_ofi %>'>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-4 columns">
+      <div class="row collapse">
+        <div class="small-5 large-4 columns">
+          <span class="prefix">Fono Dom:</span>
+        </div>
+
+
+        <div class="small-7 large-8 columns">
+          <input type="text" value ='<%= @persona.fono_casa %>'>
+        </div>
+      </div>
+    </div>
+
+    <% @persona.cuentas_correos.each do |cc| %>
+        <div class="small-8 columns">
+          <div class="row collapse">
+            <div class="small-5 large-4 columns">
+              <span class="prefix">Correo:</span>
+            </div>
+
+
+            <div class="small-7 large-8 columns">
+              <input type="text" value ='<%= cc.correoe %>'>
+            </div>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="small-4 columns">
+      <div class="row collapse">
+        <div class="small-5 large-4 columns">
+          <span class="prefix">Tipo:</span>
+        </div>
+
+
+        <div class="small-7 large-8 columns">
+          <input type="text" value ='<%= @persona.tipo.nombre %>'>
+        </div>
+      </div>
+    </div>
+    <div class="small-4 columns">
+      <div class="row collapse">
+        <div class="small-5 large-4 columns">
+          <span class="prefix">Fecha nac:</span>
+        </div>
+
+
+        <div class="small-7 large-8 columns">
+          <input type="text" value ='<%= @persona.fecha_nac %>'>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="small-12 columns">
+    <div id="paintings1" class="small-4 columns">
+      <%= image_tag @persona.file_ci_url.to_s %>
+    </div>
+    <div id="paintings2" class="small-4 columns">
+      <%= image_tag @persona.file_foto_url.to_s %>
+    </div>
+    <div id="paintings3" class="small-4 columns">
+      <%= image_tag @persona.file_titulo_url.to_s %>
+    </div>
 </div>
-
-<div class="small-8 columns">
-  <div class="row collapse">
-    <div class="small-3 large-2 columns">
-      <span class="prefix">Nombre:</span>
-    </div>
-
-
-    <div class="small-9 large-10 columns">
-      <input type="text" value ='<%= @persona.nombre_completo %>'>
-    </div>
-  </div>
+<div class="small-12 columns right">
+                             </br>
+    <%= link_to 'Editar', edit_persona_path(@persona), :class => "button  medium" %> |
+    <%= link_to 'Atras', personas_path, :class => "button  medium" %>
 </div>
-
-<div class="small-4 columns">
-  <div class="row collapse">
-    <div class="small-3 large-2 columns">
-      <span class="prefix">Sexo:</span>
-    </div>
-
-    <div class="small-9 large-10 columns">
-      <input type="text" value = <%= @persona.sexo %> >
-    </div>
-  </div>
-</div>
-
-<div class="small-8 columns">
-  <div class="row collapse">
-    <div class="small-3 large-2 columns">
-      <span class="prefix">Profesion:</span>
-    </div>
-
-
-    <div class="small-9 large-10 columns">
-      <input type="text" value ='<%= @persona.profesion.nombre %>'>
-    </div>
-  </div>
-</div>
-
-<div class="small-4 columns">
-  <div class="row collapse">
-    <div class="small-5 large-4 columns">
-      <span class="prefix">Fono Movil:</span>
-    </div>
-
-    <div class="small-7 large-8 columns">
-      <input type="text" value = <%= @persona.fono_movil %> >
-    </div>
-  </div>
-</div>
-
-<div class="small-4 columns">
-  <div class="row collapse">
-    <div class="small-5 large-4 columns">
-      <span class="prefix">Fono Ofi:</span>
-    </div>
-
-
-    <div class="small-7 large-8 columns">
-      <input type="text" value ='<%= @persona.fono_ofi %>'>
-    </div>
-  </div>
-</div>
-
-<div class="small-4 columns">
-  <div class="row collapse">
-    <div class="small-5 large-4 columns">
-      <span class="prefix">Fono Dom:</span>
-    </div>
-
-
-    <div class="small-7 large-8 columns">
-      <input type="text" value ='<%= @persona.fono_casa %>'>
-    </div>
-  </div>
-</div>
-
-<div class="small-8 columns">
-  <div class="row collapse">
-    <div class="small-5 large-4 columns">
-      <span class="prefix">Correo:</span>
-    </div>
-
-
-    <div class="small-7 large-8 columns">
-      <input type="text" value =''>
-    </div>
-  </div>
-</div>
-
-<div class="small-4 columns">
-  <div class="row collapse">
-    <div class="small-5 large-4 columns">
-      <span class="prefix">Tipo:</span>
-    </div>
-
-
-    <div class="small-7 large-8 columns">
-      <input type="text" value ='<%= @persona.tipo.nombre %>'>
-    </div>
-  </div>
-</div>
-
-  <div class="row collapse">
-    <div class="small-5 large-4 columns">
-      <span class="prefix">Fecha nac:</span>
-    </div>
-
-
-    <div class="small-7 large-8 columns">
-      <input type="text" value ='<%= @persona.fecha_nac %>'>
-    </div>
-  </div>
-
-
-
-
-<div id="paintings" class="small-4 columns">
-  <%= image_tag @persona.file_ci_url.to_s %>
-</div>
-<div id="paintings" class="small-4 columns">
-  <%= image_tag @persona.file_foto_url.to_s %>
-</div>
-<div id="paintings" class="small-4 columns">
-  <%= image_tag @persona.file_titulo_url.to_s %>
-</div>
-
-<%= link_to 'Edit', edit_persona_path(@persona) %> |
-<%= link_to 'Back', personas_path %>
