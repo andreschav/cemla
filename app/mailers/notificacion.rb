@@ -3,6 +3,7 @@ class Notificacion < ActionMailer::Base
 
   def notificacion(destinatarios,plantilla,afiches,cuenta)
     @afiches = afiches
+    @plantilla = plantilla
     Notificacion.mailer_name= cuenta
     file_plantilla = ''
 

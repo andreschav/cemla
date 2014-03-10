@@ -11,10 +11,11 @@
 
         <label for="checkbox1">
           <%= check_box_tag "profesion_id[]", 0 %>
-          Todos
+          Todos<b>[<%= Persona.all.size %>]</b>
         </label>
 
         <% Profesion.all.each do |p| %>
+
             <label for="checkbox1">
               <%= check_box_tag "profesion_id[]", p.id %>
               <%= p.nombre%>
