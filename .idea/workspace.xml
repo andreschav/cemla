@@ -55,7 +55,7 @@
     <file path="/image_uploader.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394167215448" ignored="false" />
     <file path="/Gemfile" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394170821102" ignored="false" />
     <file path="/config.js.coffee" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393723774995" ignored="false" />
-    <file path="/configuraciones_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394464556490" ignored="false" />
+    <file path="/configuraciones_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394467934905" ignored="false" />
     <file path="/index.js.erb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393865342775" ignored="false" />
     <file path="/configuraciones.js.coffee" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394174074447" ignored="false" />
     <file path="/cuenta_correo.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394138721249" ignored="false" />
@@ -82,7 +82,7 @@
       <file leaf-file-name="configuraciones_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/configuraciones_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.66132265">
+            <state line="75" column="44" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.7214429">
               <folding />
             </state>
           </provider>
@@ -91,7 +91,16 @@
       <file leaf-file-name="action_mailer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/action_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="43" selection-start="215" selection-end="226" vertical-scroll-proportion="0.0">
+            <state line="5" column="4" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="40" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -257,6 +266,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -760,31 +787,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/invitaciones/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="307" selection-end="307" vertical-scroll-proportion="0.76704544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artes/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="58" selection-start="164" selection-end="164" vertical-scroll-proportion="0.22727273" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="57" selection-start="280" selection-end="280" vertical-scroll-proportion="0.59659094" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="81" selection-start="690" selection-end="690" vertical-scroll-proportion="0.019886363" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artes/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="527" selection-end="527" vertical-scroll-proportion="0.80965906" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="31" selection-start="272" selection-end="272" vertical-scroll-proportion="0.34957626">
@@ -835,6 +837,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.254509">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/notificacion.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="11" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
@@ -842,16 +865,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="40" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="22" selection-start="1941" selection-end="1945" vertical-scroll-proportion="0.71308017">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/action_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="215" selection-end="226" vertical-scroll-proportion="0.0">
+        <state line="5" column="4" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/configuraciones_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.66132265">
+        <state line="75" column="44" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.7214429">
           <folding />
         </state>
       </provider>

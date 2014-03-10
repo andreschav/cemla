@@ -73,6 +73,7 @@ class ConfiguracionesController < ApplicationController
         end
 
         grupos_mail.each do |gm|
+          Notificacion.mailer_name='cuenta_1'
           Notificacion.notificacion(gm,plantilla,afiches,cu.nombre).deliver
           cu.update_attribute(:cantidad_enviados, cu.cantidad_enviados + gm.size)
           cu.update_attribute(:cantidad_restantes, cu.cantidad_restantes - gm.size)
