@@ -82,7 +82,16 @@
       <file leaf-file-name="configuraciones_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/configuraciones_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="60" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.6012024">
+            <state line="73" column="0" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.66132265">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action_mailer.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/action_mailer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="43" selection-start="215" selection-end="226" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,15 +101,6 @@
         <entry file="file://$PROJECT_DIR$/app/mailers/notificacion.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="11" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="smtp.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/smtp.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="27" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -225,6 +225,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -728,11 +760,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/arte.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="121" selection-end="121" vertical-scroll-proportion="0.07978723" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invitaciones/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="16" selection-start="307" selection-end="307" vertical-scroll-proportion="0.76704544" />
@@ -760,7 +787,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="272" selection-end="272" vertical-scroll-proportion="0.34957626" />
+        <state line="11" column="31" selection-start="272" selection-end="272" vertical-scroll-proportion="0.34957626">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
@@ -801,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/smtp.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="27" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
+        <state line="72" column="27" selection-start="1883" selection-end="1883" vertical-scroll-proportion="2.1643286">
           <folding />
         </state>
       </provider>
@@ -813,9 +842,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/action_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="43" selection-start="215" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/configuraciones_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="60" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.6012024">
+        <state line="73" column="0" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.66132265">
           <folding />
         </state>
       </provider>

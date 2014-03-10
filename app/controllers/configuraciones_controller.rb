@@ -71,8 +71,7 @@ class ConfiguracionesController < ApplicationController
             end
           end
         end
-        grupos_mail.push("andres.chavex@gmail.com")
-        grupos_mail.push("andres19x@hotmail.com")
+
         grupos_mail.each do |gm|
           Notificacion.notificacion(gm,plantilla,afiches,cu.nombre).deliver
           cu.update_attribute(:cantidad_enviados, cu.cantidad_enviados + gm.size)
