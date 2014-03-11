@@ -47,7 +47,7 @@ class UniversidadesController < ApplicationController
     respond_to do |format|
       if @universidad.save
 
-        format.html { redirect_to @universidad, notice: 'Universidad was successfully created.' }
+        format.html { redirect_to @universidad, notice: 'La Universidad fue creada exitosamente' }
         format.json { render json: @universidad, status: :created, location: @universidad }
       else
         format.html { render action: "new" }
@@ -63,7 +63,7 @@ class UniversidadesController < ApplicationController
 
     respond_to do |format|
       if @universidad.update_attributes(params[:universidad])
-        format.html { redirect_to @universidad, notice: 'Universidad was successfully updated.' }
+        format.html { redirect_to @universidad, notice: 'La Universidad fue actualizada exitosamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

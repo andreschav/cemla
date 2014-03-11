@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4fbb295-e7da-444b-86b9-3ccd49deac25" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/es.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/configuraciones_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/configuraciones_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/configuraciones/index.html.erb" afterPath="$PROJECT_DIR$/app/views/configuraciones/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/notificacion.rb" afterPath="$PROJECT_DIR$/app/mailers/notificacion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/smtp.yml" afterPath="$PROJECT_DIR$/config/smtp.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/usuario.rb" afterPath="$PROJECT_DIR$/app/models/usuario.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/devise.es.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/artes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/artes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/cargos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/cargos_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ciudades_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ciudades_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/correos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/correos_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/fuentes_laborales_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/fuentes_laborales_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/invitaciones_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/invitaciones_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/personas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/personas_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profesiones_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profesiones_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tipos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tipos_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/universidades_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/universidades_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cemla.iws" />
@@ -44,14 +42,14 @@
     <file path="/setup_mail.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393509891043" ignored="false" />
     <file path="/correo.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393530859635" ignored="false" />
     <file path="/notificacion.text.erb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393510531637" ignored="false" />
-    <file path="/universidades_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394145659153" ignored="false" />
+    <file path="/universidades_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570865223" ignored="false" />
     <file path="/notificacion.html.erb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393538120849" ignored="false" />
     <file path="/action_mailer.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394551801278" ignored="false" />
     <file path="/notificacion.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394325473855" ignored="false" />
     <file path="/20140225171808_create_correos.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393530786735" ignored="false" />
     <file path="/20131216193704_create_universidades.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393539889280" ignored="false" />
     <file path="/universidades.seeds.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393542560480" ignored="false" />
-    <file path="/personas_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393689192689" ignored="false" />
+    <file path="/personas_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570739419" ignored="false" />
     <file path="/routes.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393730011322" ignored="false" />
     <file path="/inflections.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393643763915" ignored="false" />
     <file path="/configuracion_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1393643850270" ignored="false" />
@@ -81,6 +79,14 @@
     <file path="/_paginator.html.erb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394554028958" ignored="false" />
     <file path="/es.yml" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394555701237" ignored="false" />
     <file path="/_first_page.html.erb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394555867763" ignored="false" />
+    <file path="/artes_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570430803" ignored="false" />
+    <file path="/cargos_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570493837" ignored="false" />
+    <file path="/ciudades_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570537415" ignored="false" />
+    <file path="/correos_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570602699" ignored="false" />
+    <file path="/fuentes_laborales_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570655705" ignored="false" />
+    <file path="/invitaciones_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570701315" ignored="false" />
+    <file path="/profesiones_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570789852" ignored="false" />
+    <file path="/tipos_controller.rb" changelist="a4fbb295-e7da-444b-86b9-3ccd49deac25" time="1394570825762" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,28 +103,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/personas/index.html.erb">
+      <file leaf-file-name="devise.en.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="2358" selection-end="2358" vertical-scroll-proportion="-31.708334">
+            <state line="3" column="25" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foundation_and_overrides.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss">
+      <file leaf-file-name="devise.es.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/locales/devise.es.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="24" selection-start="1069" selection-end="1069" vertical-scroll-proportion="-10.52">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="70" selection-start="522" selection-end="522" vertical-scroll-proportion="0.18404908">
+            <state line="19" column="58" selection-start="742" selection-end="742" vertical-scroll-proportion="0.437788">
               <folding />
             </state>
           </provider>
@@ -142,22 +139,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/shared/_links.erb" />
-        <option value="$PROJECT_DIR$/config/smtp.yml" />
-        <option value="$PROJECT_DIR$/config/initializers/action_mailer.rb" />
-        <option value="$PROJECT_DIR$/app/mailers/notificacion.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb" />
-        <option value="$PROJECT_DIR$/config/locales/en.yml" />
-        <option value="$PROJECT_DIR$/config/locales/es.yml" />
-        <option value="$PROJECT_DIR$/app/views/kaminari/_first_page.html.erb" />
         <option value="$PROJECT_DIR$/app/views/invitaciones/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/personas/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/controllers/artes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/cargos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/ciudades_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/correos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/fuentes_laborales_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/invitaciones_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/personas_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/profesiones_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tipos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/universidades_controller.rb" />
+        <option value="$PROJECT_DIR$/config/locales/devise.es.yml" />
       </list>
     </option>
   </component>
@@ -169,7 +166,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
+    <option name="x" value="1365" />
     <option name="width" value="1922" />
     <option name="height" value="1081" />
   </component>
@@ -227,11 +224,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,47 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cemla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cemla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cemla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cemla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -731,7 +716,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1081" extended-state="6" />
+    <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -739,11 +724,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5077882" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20454545" sideWeight="0.3429487" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20117396" sideWeight="0.87435097" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16862327" sideWeight="0.7040498" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20032051" sideWeight="0.086363636" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12564902" sideWeight="0.90833336" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29595014" sideWeight="0.90833336" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -812,116 +797,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/artes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="95" selection-end="95" vertical-scroll-proportion="0.1097561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/correos/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="137" selection-end="137" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p484@rails3.2.11cemla/gems/kaminari-0.15.1/lib/kaminari/models/page_scope_methods.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-0.06571936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="86" selection-end="86" vertical-scroll-proportion="0.08348794">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_first_page.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="112" selection-end="112" vertical-scroll-proportion="0.08348794">
-          <folding>
-            <element signature="e#51#77#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/invitaciones/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="657" selection-end="657" vertical-scroll-proportion="0.69573283">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_gap.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="60" selection-end="68" vertical-scroll-proportion="0.027829314">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="146" selection-end="146" vertical-scroll-proportion="0.087548636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="38" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.42628774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="215" selection-end="215" vertical-scroll-proportion="0.1598579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/es.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="184" selection-end="184" vertical-scroll-proportion="0.18650089">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="28" selection-start="1535" selection-end="1535" vertical-scroll-proportion="1.3358071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/personas/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2358" selection-end="2358" vertical-scroll-proportion="-31.708334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="24" selection-start="1069" selection-end="1069" vertical-scroll-proportion="-10.52">
+        <state line="67" column="42" selection-start="1580" selection-end="1584" vertical-scroll-proportion="1.2331288">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="70" selection-start="522" selection-end="522" vertical-scroll-proportion="0.18404908">
+        <state line="18" column="33" selection-start="670" selection-end="670" vertical-scroll-proportion="0.33665836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.33848134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/cargos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="64" selection-start="629" selection-end="629" vertical-scroll-proportion="0.5521472">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/personas/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="513" selection-end="513" vertical-scroll-proportion="0.2465234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ciudades_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="86" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.5030675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/configuraciones_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="61" selection-start="2076" selection-end="2076" vertical-scroll-proportion="0.81595093">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/correos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="63" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.5337423">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/fuentes_laborales_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="95" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.33742332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/invitaciones_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="83" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.48466256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/personas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="62" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.70552146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/profesiones_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="82" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.46625766">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tipos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="84" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.44785276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/universidades_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="23" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.81595093">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/devise.es.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="58" selection-start="742" selection-end="742" vertical-scroll-proportion="0.437788">
           <folding />
         </state>
       </provider>

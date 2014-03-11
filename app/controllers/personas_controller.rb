@@ -45,7 +45,7 @@ class PersonasController < ApplicationController
 
     respond_to do |format|
       if @persona.save
-        format.html { redirect_to @persona, notice: 'Persona was successfully created.' }
+        format.html { redirect_to @persona, notice: 'la Persona fue creada exitosamente.' }
         format.json { render json: @persona, status: :created, location: @persona }
       else
         format.html { render action: "new" }
@@ -60,14 +60,14 @@ class PersonasController < ApplicationController
     @persona = Persona.find(params[:id])
     if @persona.usuario.nil?
       if @persona.build_usuario(:email=>"coordinacionscr@gmail.com",:password => '123456789', :password_confirmation=>'123456789').save
-        redirect_to @persona, notice: 'Persona was successfully updated.'
+        redirect_to @persona, notice: 'La Persona fue actualizada correctamente'
       else
         redirect_to crear_usuario_persona_path(@persona), notice: 'Error intente nuevamente.'
       end
 
     else
       if @persona.update_attributes(params[:persona])
-         redirect_to @persona, notice: 'Persona was successfully updated.'
+         redirect_to @persona, notice: 'La Persona fue actualizada correctamente'
       else
         render action: "edit"
       end

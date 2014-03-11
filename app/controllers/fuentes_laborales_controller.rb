@@ -44,7 +44,7 @@ class FuentesLaboralesController < ApplicationController
 
     respond_to do |format|
       if @fuente_laboral.save
-        format.html { redirect_to @fuente_laboral, notice: 'Fuente laboral was successfully created.' }
+        format.html { redirect_to @fuente_laboral, notice: 'la Fuente laboral fue creada exitosamente' }
         format.json { render json: @fuente_laboral, status: :created, location: @fuente_laboral }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class FuentesLaboralesController < ApplicationController
 
     respond_to do |format|
       if @fuente_laboral.update_attributes(params[:fuente_laboral])
-        format.html { redirect_to @fuente_laboral, notice: 'Fuente laboral was successfully updated.' }
+        format.html { redirect_to @fuente_laboral, notice: 'la Fuente laboral fue actualizada exitosamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

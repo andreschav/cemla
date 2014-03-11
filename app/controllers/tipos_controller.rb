@@ -44,7 +44,7 @@ class TiposController < ApplicationController
 
     respond_to do |format|
       if @tipo.save
-        format.html { redirect_to @tipo, notice: 'Tipo was successfully created.' }
+        format.html { redirect_to @tipo, notice: 'El Tipo fue creado exitosamente' }
         format.json { render json: @tipo, status: :created, location: @tipo }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class TiposController < ApplicationController
 
     respond_to do |format|
       if @tipo.update_attributes(params[:tipo])
-        format.html { redirect_to @tipo, notice: 'Tipo was successfully updated.' }
+        format.html { redirect_to @tipo, notice: 'El Tipo fue Actualizado exitosamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

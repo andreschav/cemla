@@ -44,7 +44,7 @@ class ProfesionesController < ApplicationController
 
     respond_to do |format|
       if @profesion.save
-        format.html { redirect_to @profesion, notice: 'Profesion was successfully created.' }
+        format.html { redirect_to @profesion, notice: 'La Profesion fue creada exitosamente' }
         format.json { render json: @profesion, status: :created, location: @profesion }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class ProfesionesController < ApplicationController
 
     respond_to do |format|
       if @profesion.update_attributes(params[:profesion])
-        format.html { redirect_to @profesion, notice: 'Profesion was successfully updated.' }
+        format.html { redirect_to @profesion, notice: 'La Profesion fue actualizada correctamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

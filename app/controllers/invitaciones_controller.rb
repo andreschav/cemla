@@ -44,7 +44,7 @@ class InvitacionesController < ApplicationController
 
     respond_to do |format|
       if @invitacion.save
-        format.html { redirect_to @invitacion, notice: 'Invitacion was successfully created.' }
+        format.html { redirect_to @invitacion, notice: 'la Plantilla fue creada exitosamente' }
         format.json { render json: @invitacion, status: :created, location: @invitacion }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class InvitacionesController < ApplicationController
 
     respond_to do |format|
       if @invitacion.update_attributes(params[:invitacion])
-        format.html { redirect_to @invitacion, notice: 'Invitacion was successfully updated.' }
+        format.html { redirect_to @invitacion, notice: 'La Plantilla fue actualizada exitosamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

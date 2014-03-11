@@ -44,7 +44,7 @@ class CorreosController < ApplicationController
 
     respond_to do |format|
       if @correo.save
-        format.html { redirect_to @correo, notice: 'Correo was successfully created.' }
+        format.html { redirect_to @correo, notice: 'La direccion de Correo fue creada exitosamente' }
         format.json { render json: @correo, status: :created, location: @correo }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class CorreosController < ApplicationController
 
     respond_to do |format|
       if @correo.update_attributes(params[:correo])
-        format.html { redirect_to @correo, notice: 'Correo was successfully updated.' }
+        format.html { redirect_to @correo, notice: 'la direccion de Correo fue actualizada exitosamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

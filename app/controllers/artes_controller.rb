@@ -46,7 +46,7 @@ class ArtesController < ApplicationController
 
     respond_to do |format|
       if @arte.save
-        format.html { redirect_to @arte, notice: 'Arte was successfully created.' }
+        format.html { redirect_to @arte, notice: 'El Afiche fue creado exitosamente' }
         format.json { render json: @arte, status: :created, location: @arte }
       else
         format.html { render action: "new" }
@@ -62,7 +62,7 @@ class ArtesController < ApplicationController
 
     respond_to do |format|
       if @arte.update_attributes(params[:arte])
-        format.html { redirect_to @arte, notice: 'Arte was successfully updated.' }
+        format.html { redirect_to @arte, notice: 'El Afiche fue actualizado exitosamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

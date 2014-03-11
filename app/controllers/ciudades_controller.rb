@@ -44,7 +44,7 @@ class CiudadesController < ApplicationController
 
     respond_to do |format|
       if @ciudad.save
-        format.html { redirect_to @ciudad, notice: 'Ciudad was successfully created.' }
+        format.html { redirect_to @ciudad, notice: 'La Ciudad fue creada exitosamente' }
         format.json { render json: @ciudad, status: :created, location: @ciudad }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class CiudadesController < ApplicationController
 
     respond_to do |format|
       if @ciudad.update_attributes(params[:ciudad])
-        format.html { redirect_to @ciudad, notice: 'Ciudad was successfully updated.' }
+        format.html { redirect_to @ciudad, notice: 'La Ciudad fue actualizada exitosamente' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
