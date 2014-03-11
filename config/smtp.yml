@@ -106,3 +106,105 @@ development:
     user_name: "cemla.marketing@gmail.com"
     password: "cemlamarketing"
     from: "Cemla Marketing "
+
+production:
+  cuenta_1:
+    <<: *common
+    user_name: "cemla.marketing1@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_2:
+    <<: *common
+    user_name: "cemla.marketing2@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_3:
+    <<: *common
+    user_name: "cemla.marketing3@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_4:
+    <<: *common
+    user_name: "cemla.marketing4@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_5:
+    <<: *common
+    user_name: "cemla.marketing5@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_6:
+    <<: *common
+    user_name: "cemla.marketing6@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_7:
+    <<: *common
+    user_name: "cemla.marketing7@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_8:
+    <<: *common
+    user_name: "cemla.marketing8@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_9:
+    <<: *common
+    user_name: "cemla.marketing9@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_10:
+    <<: *common
+    user_name: "cemla.marketing10@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_11:
+    <<: *common
+    user_name: "cemla.marketing11@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_12:
+    <<: *common
+    user_name: "cemla.marketing12@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_13:
+    <<: *common
+    user_name: "cemla.marketing13@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_14:
+    <<: *common
+    user_name: "cemla.marketing14@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_15:
+    <<: *common
+    user_name: "cemla.marketing15@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_16:
+    <<: *common
+    user_name: "cemla.marketing@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_17:
+    <<: *common
+    user_name: "cemla.marketing17@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_18:
+    <<: *common
+    user_name: "cemla.marketing18@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_19:
+    <<: *common
+    user_name: "cemla.marketing19@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  cuenta_20:
+    <<: *common
+    user_name: "cemla.marketing@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
