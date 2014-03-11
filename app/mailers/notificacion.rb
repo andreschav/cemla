@@ -26,4 +26,5 @@ class Notificacion < ActionMailer::Base
     end
   end
 
+
 end

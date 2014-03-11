@@ -29,11 +29,11 @@
       <body>
       <!-- Header and Nav -->
 
-      <div class="row">
-        <div class="large-2 columns">
+      <div class="row panel ">
+        <div class="large-2 columns ">
           <h1>CEMLA </h1>
         </div>
-        <div class="large-10 columns">
+        <div class="large-10 columns ">
           <ul class="inline-list right">
 
             <li><%= "#{current_usuario.persona.nombre} #{current_usuario.persona.apaterno} #{current_usuario.persona.amaterno}" %></li>
@@ -46,11 +46,11 @@
       </div>
 
       <!-- End Header and Nav -->
-      <div class="row">
+      <div class="row panel ">
 
         <!-- Main Content Section -->
         <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-        <div class="large-10 push-2 columns">
+        <div class="large-10 push-2 columns ">
 
           <%= yield %>
 
@@ -59,7 +59,7 @@
 
         <!-- Nav Sidebar -->
         <!-- This is source ordered to be pulled to the left on larger screens -->
-        <div class="large-2 pull-10 columns">
+        <div class="large-2 pull-10 columns ">
 
 
           <ul class="side-nav">
@@ -88,7 +88,7 @@
 
       <!-- Footer -->
 
-      <footer class="row">
+      <footer class="row panel">
         <div class="large-12 columns">
           <hr />
           <div class="row">
@@ -97,10 +97,8 @@
             </div>
             <div class="large-6 columns">
               <ul class="inline-list right">
-                <li><a href="#">Section 1</a></li>
-                <li><a href="#">Section 2</a></li>
-                <li><a href="#">Section 3</a></li>
-                <li><a href="#">Section 4</a></li>
+                <li><a href="#">Sistema desarrollado por la <b>Tres Millas</b> </a></li>
+
               </ul>
             </div>
           </div>

@@ -1,5 +1,7 @@
 <% content_for :login do %>
+
 <section class="loginform cf">
+  <h2>Sistema Promociones Cemla </h2>
   <%= form_for resource, :as => resource_name, :url => session_path(resource_name), :name => "login" do |f| %>
     <ul>
       <li>
@@ -15,6 +17,6 @@
       </li>
     </ul>
   <% end %>
-  <%= render "devise/shared/links" %>
+
 </section>
 <% end %>

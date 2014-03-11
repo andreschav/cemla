@@ -82,7 +82,7 @@ class ConfiguracionesController < ApplicationController
       end
     end
 
-    redirect_to configuraciones_path
+    redirect_to configuraciones_path, notice: 'Correos Enviados Exitosamente.'
   end
 
 end

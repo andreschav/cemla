@@ -106,6 +106,11 @@ development:
     user_name: "cemla.marketing@gmail.com"
     password: "cemlamarketing"
     from: "Cemla Marketing "
+  recover:
+    <<: *common
+    user_name: "cemla.marketing@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
 
 production:
   cuenta_1:
@@ -204,6 +209,11 @@ production:
     password: "cemlamarketing"
     from: "Cemla Marketing "
   cuenta_20:
+    <<: *common
+    user_name: "cemla.marketing@gmail.com"
+    password: "cemlamarketing"
+    from: "Cemla Marketing "
+  recover:
     <<: *common
     user_name: "cemla.marketing@gmail.com"
     password: "cemlamarketing"

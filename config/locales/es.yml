@@ -1,0 +1,8 @@
+es:
+  views:
+      pagination:
+        first: "&laquo; Primer"
+        last: "Ultimo &raquo;"
+        previous: "&lsaquo; Ant"
+        next: "Sig &rsaquo;"
+        truncate: "&hellip;"
